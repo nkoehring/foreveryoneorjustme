@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div id="content">
+    <header>
+      Is&nbsp;it <em>Monday</em> for&nbsp;everyone or&nbsp;just&nbsp;me?
+    </header>
+    <p id="msg">…</p>
+    <p id="sorry">…</p>
+  </div>
+
+  <script src="day.js"></script>
+  <script>
+    const good = 'It actually IS MONDAY!'
+    const sorry = 'I\'m so sorry about the terrible news.'
+    const bad = 'All good! It\'s not Monday.'
+
+    isItTheDay(1, { good, bad, sorry })
+  </script>
+  <link rel="stylesheet" href="style.css">
+</body>
+</html>

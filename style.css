@@ -1,0 +1,45 @@
+html,body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: sans-serif;
+  overflow: hidden;
+  background: #EEE8E8;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+#content {
+  display: block;
+  text-align: center;
+  padding: 4rem;
+}
+
+#content > header {
+  font-size: 6rem;
+}
+#msg, #sorry {
+  font-size: 4rem;
+  font-weight: bold;
+}
+#content > header em {
+  text-transform: uppercase;
+  color: rgba(0,168,255,.5);
+  text-shadow: 4px 4px 0 rgba(255,0,180,.5);
+  font-style: normal;
+  font-weight: bold;
+}
+#msg.good {
+  color: green;
+}
+#msg.bad {
+  color: #D22;
+}
+#sorry {
+  color: #444;
+}
