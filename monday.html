@@ -9,8 +9,18 @@
     <header>
       Is&nbsp;it <em>Monday</em> for&nbsp;everyone or&nbsp;just&nbsp;me?
     </header>
-    <p id="msg">…</p>
-    <p id="sorry">…</p>
+    <div id="spinner">
+      <div class="spacer"></div>
+      <div class="piece">L</div>
+      <div class="piece">O</div>
+      <div class="piece">A</div>
+      <div class="piece">D</div>
+      <div class="piece">I</div>
+      <div class="piece">N</div>
+      <div class="piece">G</div>
+    </div>
+    <p id="msg"></p>
+    <p id="sorry"></p>
   </div>
 
   <script src="day.js"></script>
@@ -22,5 +32,6 @@
     isItTheDay(1, { good, bad, sorry })
   </script>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://timeapi.org/utc/now.json?callback=apiCallback"></script>
 </body>
 </html>

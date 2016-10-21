@@ -1,4 +1,4 @@
-function isItTheDay (day, msg) {
+function isItTheDay (date, day, msg) {
   const el = document.getElementById('msg')
   const el2 = document.getElementById('sorry')
 
@@ -11,4 +11,8 @@ function isItTheDay (day, msg) {
     el.innerText = msg.bad
     el2.innerText = '' 
   }
+}
+
+function apiCallback (json) {
+  const date = new Date(json.dateString);
 }
