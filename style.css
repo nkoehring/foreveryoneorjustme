@@ -34,10 +34,10 @@ body {
   font-style: normal;
   font-weight: bold;
 }
-#msg.yes {
+#msg.good {
   color: green;
 }
-#msg.no {
+#msg.bad {
   color: #D22;
 }
 #sorry {

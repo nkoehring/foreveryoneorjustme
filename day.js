@@ -4,21 +4,18 @@ function setMessage (date) {
   const config = window.config
   const itIsTheDay = date.getDay() === config.day
 
+  const good = (itIsTheDay && !config.sorryIf) || (!itIsTheDay && config.sorryIf)
+
   el.innerText = ''
   el2.innerText = ''
 
-  if (itIsTheDay) {
-    el.className = 'yes'
-    el.innerText = config.messages.yes
-    if (config.sorryIf) {
-      el2.innerText = config.messages.sorry
-    }
+  if (good) {
+    el.className = 'good'
+    el.innerText = config.messages.good
   } else {
-    el.className = 'no'
-    el.innerText = config.messages.no
-    if (!config.sorryIf) {
-      el2.innerText = config.messages.sorry
-    }
+    el.className = 'bad'
+    el.innerText = config.messages.bad
+    el2.innerText = config.messages.sorry
   }
 }
 
